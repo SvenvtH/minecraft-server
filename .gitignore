@@ -1,0 +1,13 @@
+world/
+world_nether/
+world_the_end/
+plugins/dynmap/
+plugins/CraftaroCore/
+logs/
+plugins/Graves/
+plugins/GodItems/
+plugins/MythicMobs/data/
+plugins/GriefPreventionData/
+ops.json
+server.properties
+usercache.json

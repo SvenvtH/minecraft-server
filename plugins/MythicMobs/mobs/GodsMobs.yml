@@ -1,0 +1,29 @@
+GodZeus:
+  Type: ZOMBIFIED_PIGLIN
+  Display: '&bZEUS, The lightning keeper'
+  Health: 1200
+  Damage: 15
+  BossBar:
+    Enabled: true
+    Title: '&bZEUS, The lightning keeper'
+    Range: 1200
+    Color: BLUE
+    Style: SOLID
+  Skills:
+  - speak{m="Mortals, behold the might of Zeus!";cooldown=20} @PlayersInRadius{r=40} ~onCombat 0.2
+  - speak{m="You dared challenge the might of Olympus, and now you pay the price, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill
+  - skill{s=SmiteAttack} @target 0.2
+  - skill{s=SmashAttack} @target 0.2
+  Equipment:
+  - GI_MightOfTheThunder HAND
+  - GI_MightOfTheThunder OFFHAND
+  - DIAMOND_CHESTPLATE{enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} CHEST
+  - DIAMOND_LEGGINGS{enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,THORNS:2} LEGS
+  - DIAMOND_BOOTS{enchants=PROTECTION_ENVIRONMENTAL:4,DURABILITY:3,MENDING:1,PROTECTION_FALL:4,DEPTH_STRIDER:3} FEET
+  Drops:
+  - ZeusDrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.23
+    MaxCombatDistance: 40
+    PreventOtherDrops: true

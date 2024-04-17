@@ -1,0 +1,46 @@
+GI_TrickstersChestplate:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: CHAINMAIL_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Trickster''s Chestplate","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":true}]}'
+      loc-name: '{"text":"","extra":["trickster_chestplate"]}'
+      lore:
+      - '""'
+      - '{"text":"","extra":[{"text":"A stealthy chestplate that allows","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '{"text":"","extra":[{"text":"you to avoid unwanted eyes","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '""'
+      - '{"text":"","extra":[{"text":"(Sneak) - Become invisible","obfuscated":false,"italic":true,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      custom-model-data: 1000003
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 5
+        THORNS: 4
+        DURABILITY: 3
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 6.0
+          name: generic.armor
+          slot: CHEST
+          uuid: a8489a07-6d02-4df9-b2b0-953c14e862e0
+          operation: 0
+        GENERIC_ARMOR_TOUGHNESS:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 1.0
+          name: generic.armor_toughness
+          slot: CHEST
+          uuid: a582e0eb-1434-4edf-9767-4c9667685d2c
+          operation: 0
+        GENERIC_KNOCKBACK_RESISTANCE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: generic.knockback_resistance
+          slot: CHEST
+          uuid: b2c6ba54-1d28-475c-b3da-bc7f43583578
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      Unbreakable: true

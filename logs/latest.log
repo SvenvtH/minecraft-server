@@ -1,16 +1,16 @@
-[13:20:39] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[13:20:41] [ServerMain/INFO]: Loaded 1174 recipes
-[13:20:41] [ServerMain/INFO]: Loaded 1271 advancements
-[13:20:42] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[13:20:42] [Server thread/INFO]: Loading properties
-[13:20:42] [Server thread/INFO]: This server is running Paper version git-Paper-484 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 4445d23)
-[13:20:42] [Server thread/INFO]: Using 4 threads for Netty based IO
-[13:20:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[13:20:43] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[17:47:08] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:47:10] [ServerMain/INFO]: Loaded 1174 recipes
+[17:47:10] [ServerMain/INFO]: Loaded 1271 advancements
+[17:47:11] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[17:47:11] [Server thread/INFO]: Loading properties
+[17:47:11] [Server thread/INFO]: This server is running Paper version git-Paper-484 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 4445d23)
+[17:47:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:47:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:47:11] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[13:20:43] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[13:20:43] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+[17:47:11] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[17:47:12] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
 java.io.IOException: The handle is invalid
 	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
 	at java.io.FileInputStream.read(FileInputStream.java:276) ~[?:?]
@@ -40,73 +40,812 @@ java.io.IOException: The handle is invalid
 		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[terminalconsoleappender-1.3.0.jar:?]
 		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
 		at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.20.4.jar:git-Paper-484]
-[13:20:43] [Server thread/INFO]: Default game type: SURVIVAL
-[13:20:43] [Server thread/INFO]: Generating keypair
-[13:20:43] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:20:43] [Server thread/INFO]: Using default channel type
-[13:20:43] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[13:20:43] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[13:20:43] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b96-7f38765)
-[13:20:44] [Server thread/INFO]: [floodgate] Took 920ms to boot Floodgate
-[13:20:44] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.3-SNAPSHOT
-[13:20:44] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[13:20:44] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[13:20:44] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[13:20:44] [Server thread/INFO]: Preparing level "world"
-[13:20:45] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[13:20:45] [Server thread/INFO]: Time elapsed: 292 ms
-[13:20:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[13:20:45] [Server thread/INFO]: Time elapsed: 20 ms
-[13:20:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[13:20:45] [Server thread/INFO]: Time elapsed: 18 ms
-[13:20:45] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.2-SNAPSHOT (b96-7f38765)
-[13:20:46] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.2.3-SNAPSHOT
-[13:20:46] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[13:20:46] [Server thread/INFO]: [Geyser-Spigot] 
-[13:20:46] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.2.3-SNAPSHOT (git-master-a24f684)
-[13:20:46] [Server thread/INFO]: [Geyser-Spigot] 
-[13:20:46] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[13:20:51] [nioEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
-[13:20:51] [Server thread/INFO]: [Geyser-Spigot] Done (5,591s)! Run /geyser help for help!
-[13:20:52] [Server thread/INFO]: Running delayed init tasks
-[13:20:52] [Server thread/INFO]: Done (9.720s)! For help, type "help"
-[13:20:52] [Server thread/INFO]: Timings Reset
-[13:20:52] [Server thread/INFO]: ---- Showing Help For: Geyser (Page 1/1) ----
-[13:20:52] [Server thread/INFO]: /geyser ?: Shows help for all registered commands.
-[13:20:52] [Server thread/INFO]: /geyser connectiontest: geyser.commands.connectiontest.desc
-[13:20:52] [Server thread/INFO]: /geyser dump: Dumps Geyser debug information for bug reports.
-[13:20:52] [Server thread/INFO]: /geyser help: Shows help for all registered commands.
-[13:20:52] [Server thread/INFO]: /geyser list: List all players connected through Geyser.
-[13:20:52] [Server thread/INFO]: /geyser reload: Reloads the Geyser configurations. Kicks all players when used!
-[13:20:52] [Server thread/INFO]: /geyser version: Shows the current Geyser version and checks for updates.
-[13:20:59] [Server thread/INFO]: Provide the server IP and port you are trying to test Bedrock connections for. Example: `test.geysermc.org:19132`
-[13:22:44] [Server thread/INFO]: Stopping server
-[13:22:44] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.2.3-SNAPSHOT
-[13:22:44] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[13:22:44] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[13:22:44] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.2-SNAPSHOT (b96-7f38765)
-[13:22:44] [Server thread/INFO]: Saving players
-[13:22:44] [WebSocketConnectReadThread-76/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[13:22:44] [Server thread/INFO]: Saving worlds
-[13:22:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[13:22:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[13:22:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[13:22:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[13:22:45] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 1 poi chunks in world 'world' in 1,26s
-[13:22:45] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:22:45] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[13:22:45] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[13:22:45] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[13:22:45] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[13:22:46] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0,38s
-[13:22:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:22:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[13:22:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[13:22:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[13:22:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[13:22:46] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0,09s
-[13:22:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:22:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[13:22:46] [Server thread/INFO]: Flushing Chunk IO
-[13:22:46] [Server thread/INFO]: Closing Thread Pool
-[13:22:46] [Server thread/INFO]: Closing Server
+[17:47:12] [Server thread/INFO]: Default game type: SURVIVAL
+[17:47:12] [Server thread/INFO]: Generating keypair
+[17:47:12] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:47:12] [Server thread/INFO]: Using default channel type
+[17:47:12] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[17:47:12] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[17:47:12] [Server thread/INFO]: [Graves] Loading server plugin Graves v4.9.1.6
+[17:47:12] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.2-SNAPSHOT (b96-7f38765)
+[17:47:13] [Server thread/INFO]: [floodgate] Took 1.117ms to boot Floodgate
+[17:47:13] [Server thread/INFO]: [UltimateTimber] Loading server plugin UltimateTimber v3.0.1
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-platform-facet:4.1.1 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-platform-facet-4.1.1' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency org.slf4j:slf4j-api:2.0.11 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'slf4j-api-2.0.11' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-platform-bukkit:4.1.1 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-platform-bukkit-4.1.1' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-text-serializer-gson-legacy-impl:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-text-serializer-gson-legacy-impl-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-text-serializer-gson:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-text-serializer-gson-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-nbt:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-nbt-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency com.h2database:h2:1.4.200 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'h2-1.4.200' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:examination-api:1.3.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'examination-api-1.3.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency org.jooq:jooq:3.14.16 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'jooq-3.14.16' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency org.mariadb.jdbc:mariadb-java-client:3.2.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'mariadb-java-client-3.2.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency com.zaxxer:HikariCP:4.0.3 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'HikariCP-4.0.3' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency org.apache.commons:commons-lang3:3.12.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'commons-lang3-3.12.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-key:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-key-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-text-minimessage:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-text-minimessage-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-platform-api:4.1.1 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-platform-api-4.1.1' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-platform-viaversion:4.1.1 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-platform-viaversion-4.1.1' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-api:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-api-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency com.github.cryptomorin:XSeries:9.8.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'XSeries-9.8.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-text-serializer-legacy:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-text-serializer-legacy-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency org.apache.commons:commons-text:1.9 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'commons-text-1.9' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:adventure-text-serializer-plain:4.11.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'adventure-text-serializer-plain-4.11.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency net.kyori:examination-string:1.3.0 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'examination-string-1.3.0' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loading dependency org.reactivestreams:reactive-streams:1.0.2 from https://repo1.maven.org/maven2
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] Loaded dependency 'reactive-streams-1.0.2' successfully.
+[17:47:13] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] ----------------------------
+[17:47:13] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v6.6
+[17:47:13] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.6.1-${CI_COMMIT_SHORT_SHA}
+[17:47:13] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[17:47:13] [Server thread/INFO]: [MythicMobs] §4M§6y§6t§6h§2i§2c§2 §3E§3n§1a§1b§1l§5e§5d§4!
+[17:47:13] [Server thread/INFO]: [GriefPrevention] Loading server plugin GriefPrevention v16.18.2
+[17:47:13] [Server thread/INFO]: [GodItems] Loading server plugin GodItems v3.0.0-ALPHA3.6
+[17:47:13] [Server thread/INFO]: [GodItems] Optional dependency WorldGuard not found. WorldGuard related features will not work.
+[17:47:13] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.2.3-SNAPSHOT
+[17:47:14] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[17:47:14] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[17:47:14] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-beta-4-935
+[17:47:14] [Server thread/INFO]: [dynmap] version=git-Paper-484 (MC: 1.20.4)
+[17:47:14] [Server thread/INFO]: [dynmap] Mod Support API available
+[17:47:14] [Server thread/INFO]: [BuildPortals] Loading server plugin BuildPortals v2.3.0
+[17:47:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:47:14] [Server thread/INFO]: Preparing level "world"
+[17:47:15] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:47:15] [Server thread/INFO]: Time elapsed: 240 ms
+[17:47:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:47:15] [Server thread/INFO]: Time elapsed: 23 ms
+[17:47:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:47:15] [Server thread/INFO]: Time elapsed: 23 ms
+[17:47:15] [Server thread/INFO]: [Graves] Enabling Graves v4.9.1.6
+[17:47:15] [Server thread/INFO]: [Graves] Integration: Hooked into MiniMessage.
+[17:47:15] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.2-SNAPSHOT (b96-7f38765)
+[17:47:16] [Server thread/INFO]: [UltimateTimber] Enabling UltimateTimber v3.0.1
+[17:47:16] [Server thread/INFO]:  
+[17:47:16] [Server thread/INFO]: =============================
+[17:47:16] [Server thread/INFO]: UltimateTimber 3.0.1 by Songoda <3!
+[17:47:16] [Server thread/INFO]: Action: Enabling...
+[17:47:16] [Server thread/INFO]: [UltimateTimber] Loaded locale "en_US"
+[17:47:16] [Server thread/INFO]: [com.craftaro.ultimatetimber.core.CoreLogger] [UltimateTimber] [CraftaroCore] [CraftaroCore] Hooked UltimateTimber.
+[17:47:16] [Server thread/INFO]: =============================
+[17:47:16] [Server thread/INFO]:  
+[17:47:16] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v6.6
+[17:47:16] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[17:47:16] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 6.6
+[17:47:16] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[17:47:16] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.6.1-${CI_COMMIT_SHORT_SHA}
+[17:47:17] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.20.4)...
+[17:47:17] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[17:47:18] [Server thread/INFO]: [MythicMobs] Mythic GriefPrevention Support has been enabled!
+[17:47:18] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\sven\Desktop\mcserver\plugins\MythicMobs\data
+[17:47:18] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\sven\Desktop\mcserver\plugins\MythicMobs\data\worlds
+[17:47:19] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[17:47:20] [Server thread/INFO]: [MythicMobs] Loading Items...
+[17:47:20] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[17:47:20] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[17:47:20] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[17:47:20] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[17:47:20] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[17:47:20] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[17:47:20] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[17:47:20] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.6.1 ( build ${CI_COMMIT_SHORT_SHA} ) has been successfully loaded!
+[17:47:20] [Server thread/INFO]: [GriefPrevention] Enabling GriefPrevention v16.18.2
+[17:47:20] [Server thread/INFO]: [GriefPrevention] Finished loading configuration.
+[17:47:20] [Server thread/INFO]: [GriefPrevention] 0 total claims loaded.
+[17:47:20] [Server thread/INFO]: [GriefPrevention] Customizable messages loaded.
+[17:47:20] [Server thread/INFO]: [GriefPrevention] Finished loading data (File Mode).
+[17:47:20] [Server thread/INFO]: [GriefPrevention] Boot finished.
+[17:47:20] [Server thread/INFO]: [GodItems] Enabling GodItems v3.0.0-ALPHA3.6
+[17:47:20] [Server thread/INFO]: [GodItems] Made by MitromniZ and Cros_bow
+[17:47:20] [Server thread/INFO]: [GodItems] Bosses are not yet implemented into the new version of the plugin so they will not spawn
+[17:47:20] [Server thread/INFO]: [GodItems] Textures loaded
+[17:47:21] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.2.3-SNAPSHOT
+[17:47:21] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-beta-4-935
+[17:47:21] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
+[17:47:21] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[17:47:21] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[17:47:21] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[17:47:23] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[17:47:23] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[17:47:23] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[17:47:23] [Server thread/INFO]: [dynmap] version 3.7-beta-4-935 is enabled - core version 3.7-beta-4-935
+[17:47:23] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[17:47:23] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[17:47:23] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[17:47:23] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 5259 pending tile renders for world 'world'
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 2965 pending tile renders for world 'world_nether'
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[17:47:23] [Server thread/INFO]: [dynmap] Loaded 2965 pending tile renders for world 'world_the_end'
+[17:47:23] [Server thread/INFO]: [dynmap] Enabled
+[17:47:23] [Server thread/INFO]: [BuildPortals] Enabling BuildPortals v2.3.0
+[17:47:23] [Server thread/INFO]: [BuildPortals] No portals data in configurations.
+[17:47:23] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:47:23] [Server thread/INFO]: [Geyser-Spigot] 
+[17:47:23] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.2.3-SNAPSHOT (git-master-a24f684)
+[17:47:23] [Server thread/INFO]: [Geyser-Spigot] 
+[17:47:23] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:47:23] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[17:47:28] [nioEventLoopGroup-3-1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
+[17:47:28] [Server thread/INFO]: [Geyser-Spigot] Done (4,445s)! Run /geyser help for help!
+[17:47:28] [Server thread/INFO]: Running delayed init tasks
+[17:47:28] [Server thread/INFO]: Done (17.124s)! For help, type "help"
+[17:47:28] [Server thread/INFO]: Timings Reset
+[17:47:29] [User Authenticator #0/INFO]: UUID of player RedReflex is 470a314a-1d96-487e-993b-9770c116a66c
+[17:47:29] [Server thread/INFO]: [GodItems] The texture pack is only available if you download the plugin from our patreon page
+[17:47:29] [Server thread/INFO]: RedReflex joined the game
+[17:47:29] [Server thread/INFO]: RedReflex[/127.0.0.1:56477] logged in with entity id 125 at ([world]8.880240471645708, 66.0, 39.18857304994791)
+[17:47:33] [Server thread/INFO]: RedReflex issued server command: /goditems
+[17:47:41] [Server thread/INFO]: RedReflex issued server command: /getitem thunder_axe
+[17:47:46] [Server thread/INFO]: RedReflex issued server command: /mm items import
+[17:47:56] [Server thread/INFO]: RedReflex issued server command: /mm items import &bMight of the thunder
+[17:48:07] [Server thread/INFO]: RedReflex issued server command: /mm items list
+[17:48:18] [Server thread/INFO]: RedReflex issued server command: /mm items import GI_MightOfTheThunder
+[17:48:31] [Server thread/INFO]: RedReflex issued server command: /mm items give RedReflex GI_MightOfTheThunder
+[17:48:35] [Server thread/INFO]: RedReflex issued server command: /summon pig
+[17:48:36] [Server thread/INFO]: [RedReflex: Summoned new Pig]
+[17:49:09] [Server thread/INFO]: RedReflex issued server command: /getitem trickster_chestplate
+[17:49:16] [Server thread/INFO]: RedReflex issued server command: /mm items give RedReflex GI_TrickstersChestplate
+[17:49:22] [Server thread/INFO]: RedReflex issued server command: /mm items import GI_TrickstersChestplate
+[17:49:42] [Server thread/INFO]: RedReflex issued server command: /charms
+[17:49:48] [Server thread/INFO]: RedReflex issued server command: /getitem trickster_chestplate_charm_3
+[17:49:48] [Server thread/INFO]: RedReflex has made the advancement [Acquire Hardware]
+[17:49:51] [Server thread/INFO]: RedReflex issued server command: /charms
+[17:50:31] [Server thread/INFO]: RedReflex issued server command: /getitem draculas_armor
+[17:50:37] [Server thread/INFO]: RedReflex issued server command: /mm items import GI_DraculasArmor
+[17:52:02] [Server thread/INFO]: RedReflex issued server command: /mm mobs browse
+[17:52:25] [Server thread/INFO]: RedReflex issued server command: /spawnpoint
+[17:52:25] [Server thread/INFO]: [RedReflex: Set spawn point to 2, 65, 25 [0.0] in minecraft:overworld for RedReflex]
+[17:52:29] [Server thread/INFO]: RedReflex has made the advancement [Cover Me with Diamonds]
+[17:52:39] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get
+[17:52:41] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg give
+[17:53:03] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get SkeletonKing
+[17:53:08] [Server thread/INFO]: RedReflex issued server command: /gamemode survival
+[17:53:08] [Server thread/INFO]: [RedReflex: Set own game mode to Survival Mode]
+[17:53:36] [Server thread/INFO]: RedReflex issued server command: /time set day
+[17:53:36] [Server thread/INFO]: [RedReflex: Set the time to 1000]
+[17:54:02] [Server thread/INFO]: RedReflex issued server command: /give RedReflex minecraft:enchanted_golden_apple 16
+[17:54:02] [Server thread/INFO]: [RedReflex: Gave 16 [Enchanted Golden Apple] to RedReflex]
+[17:54:08] [Server thread/INFO]: RedReflex issued server command: /enchant RedReflex minecraft:sharpness 5
+[17:54:08] [Server thread/INFO]: [RedReflex: Applied enchantment Sharpness V to RedReflex's item]
+[17:54:42] [Server thread/INFO]: RedReflex has made the advancement [Monster Hunter]
+[17:54:42] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1257, uuid='a2e471c0-a56f-489a-85ef-8192b0f03c7d', l='ServerLevel[world]', x=2.62, y=68.00, z=72.12, cpos=[0, 4], tl=138, v=true] died: Skeletal Minion was slain by RedReflex
+[17:54:45] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1255, uuid='dff20655-47ad-49e4-a95e-b238d337b168', l='ServerLevel[world]', x=3.30, y=68.00, z=66.19, cpos=[0, 4], tl=207, v=true] died: Skeletal Minion burned to death
+[17:54:45] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1258, uuid='44410ca8-f102-4d39-8eb8-f0f0334af1ca', l='ServerLevel[world]', x=10.06, y=66.00, z=67.68, cpos=[0, 4], tl=192, v=true] died: Skeletal Minion burned to death
+[17:54:45] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1262, uuid='ba15b579-b441-485d-b177-171a837101c3', l='ServerLevel[world]', x=6.30, y=67.00, z=65.35, cpos=[0, 4], tl=174, v=true] died: Skeletal Minion burned to death
+[17:54:48] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1261, uuid='092c4590-c7b1-4acb-a24b-89a9aa940f6b', l='ServerLevel[world]', x=10.05, y=65.00, z=62.84, cpos=[0, 3], tl=225, v=true] died: Skeletal Minion burned to death
+[17:54:53] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1256, uuid='ceda51f9-f2d9-476b-a669-1cb2343406a5', l='ServerLevel[world]', x=1.12, y=69.00, z=66.34, cpos=[0, 4], tl=376, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:04] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1342, uuid='6e7cad4c-a9ad-4cef-951a-fb73f22a5747', l='ServerLevel[world]', x=7.64, y=67.00, z=70.11, cpos=[0, 4], tl=44, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:05] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1338, uuid='543e6879-3a22-4465-8a4f-9e56116803d5', l='ServerLevel[world]', x=11.40, y=66.00, z=69.06, cpos=[0, 4], tl=89, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:08] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1347, uuid='5b0eb342-6390-4984-856d-ad5a13814ed9', l='ServerLevel[world]', x=7.35, y=66.00, z=68.01, cpos=[0, 4], tl=109, v=true] died: Skeletal Minion was burned to a crisp while fighting Skeletal Minion
+[17:55:11] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1343, uuid='d926eec0-7733-4f7a-ba03-72714e84260c', l='ServerLevel[world]', x=4.23, y=68.00, z=74.82, cpos=[0, 4], tl=183, v=true] died: Skeletal Minion burned to death
+[17:55:23] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeleton King'/1024, uuid='1ef32500-5dba-4ae1-a783-a602ff99b5cb', l='ServerLevel[world]', x=28.51, y=67.00, z=71.35, cpos=[1, 4], tl=2520, v=true] died: Skeleton King was slain by RedReflex
+[17:55:25] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1441, uuid='403cb7ca-7d79-4fcb-b8e2-6cbe9ab1a41d', l='ServerLevel[world]', x=32.18, y=67.58, z=71.70, cpos=[2, 4], tl=148, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:26] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1440, uuid='747eb3ab-fc49-4d34-95a3-14fe4775e987', l='ServerLevel[world]', x=34.30, y=66.00, z=69.28, cpos=[2, 4], tl=164, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:27] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1445, uuid='3a4f6578-6ae9-43bf-95dc-938d9e36a50c', l='ServerLevel[world]', x=21.32, y=66.00, z=67.51, cpos=[1, 4], tl=144, v=true] died: Skeletal Minion burned to death
+[17:55:28] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1446, uuid='f28a2951-bc3d-4e2b-86ac-1e53501edc7c', l='ServerLevel[world]', x=30.38, y=68.00, z=73.70, cpos=[1, 4], tl=158, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:28] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1442, uuid='a88dcd99-671d-4f3b-8ebd-7722bb3c9cbb', l='ServerLevel[world]', x=29.12, y=69.00, z=76.76, cpos=[1, 4], tl=188, v=true] died: Skeletal Minion burned to death
+[17:55:30] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1443, uuid='5ffe1e35-4028-4cd9-9cab-c94715edcb2a', l='ServerLevel[world]', x=24.19, y=68.00, z=73.96, cpos=[1, 4], tl=217, v=true] died: Skeletal Minion was slain by RedReflex
+[17:55:38] [Server thread/INFO]: RedReflex issued server command: /difficulty easy
+[17:55:41] [Server thread/INFO]: RedReflex issued server command: /difficulty peaceful
+[17:55:41] [Server thread/INFO]: [RedReflex: The difficulty has been set to Peaceful]
+[17:55:42] [Server thread/INFO]: RedReflex issued server command: /difficulty easy
+[17:55:42] [Server thread/INFO]: [RedReflex: The difficulty has been set to Easy]
+[17:55:47] [Server thread/INFO]: RedReflex issued server command: /gamemode creative
+[17:55:47] [Server thread/INFO]: [RedReflex: Set own game mode to Creative Mode]
+[17:58:12] [Server thread/INFO]: RedReflex issued server command: /tp RedReflex ~ ~100 ~
+[17:58:12] [Server thread/INFO]: [RedReflex: Teleported RedReflex to 27.639994, 177.626060, 54.514410]
+[17:58:12] [Server thread/WARN]: RedReflex moved too quickly! 0.0,100.0,0.0
+[17:58:12] [Server thread/WARN]: RedReflex moved too quickly! 0.0,100.0,0.0
+[17:58:12] [Server thread/WARN]: RedReflex moved too quickly! 0.0,100.0,0.0
+[17:58:12] [Server thread/WARN]: RedReflex moved too quickly! 0.0,100.0,0.0
+[17:58:12] [Server thread/WARN]: RedReflex moved too quickly! 0.0,100.0,0.0
+[17:58:18] [Server thread/INFO]: RedReflex issued server command: /setblock ~ ~ ~ minecraft:glass
+[17:58:18] [Server thread/INFO]: [RedReflex: Changed the block at 27, 175, 54]
+[17:58:32] [Server thread/INFO]: RedReflex issued server command: /spawnpoint
+[17:58:32] [Server thread/INFO]: [RedReflex: Set spawn point to 26, 177, 54 [0.0] in minecraft:overworld for RedReflex]
+[17:59:24] [Server thread/INFO]: RedReflex issued server command: /time set night
+[17:59:24] [Server thread/INFO]: [RedReflex: Set the time to 13000]
+[18:00:02] [Server thread/INFO]: RedReflex issued server command: /summon minecraft:zombified_piglin
+[18:00:02] [Server thread/INFO]: [RedReflex: Summoned new Zombified Piglin]
+[18:03:50] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:03:51] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:03:51] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:03:51] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:04:10] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:04:10] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:04:10] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:04:11] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:04:15] [Server thread/INFO]: RedReflex issued server command: /mm mobs spawn GodZeus
+[18:04:38] [Server thread/INFO]: RedReflex issued server command: /gamemode survival
+[18:04:38] [Server thread/INFO]: [RedReflex: Set own game mode to Survival Mode]
+[18:04:42] [Server thread/INFO]: RedReflex issued server command: /spawnpoint
+[18:04:42] [Server thread/INFO]: [RedReflex: Set spawn point to 33, 176, 54 [0.0] in minecraft:overworld for RedReflex]
+[18:04:44] [Server thread/INFO]: RedReflex issued server command: /gamemode creative
+[18:04:44] [Server thread/INFO]: [RedReflex: Set own game mode to Creative Mode]
+[18:04:47] [Server thread/INFO]: RedReflex issued server command: /gamemode survival
+[18:04:47] [Server thread/INFO]: [RedReflex: Set own game mode to Survival Mode]
+[18:05:07] [Server thread/INFO]: RedReflex issued server command: /give RedReflex glass
+[18:05:07] [Server thread/INFO]: [RedReflex: Gave 1 [Glass] to RedReflex]
+[18:05:12] [Server thread/INFO]: RedReflex issued server command: /give RedReflex glass
+[18:05:12] [Server thread/INFO]: [RedReflex: Gave 1 [Glass] to RedReflex]
+[18:05:13] [Server thread/INFO]: RedReflex issued server command: /give RedReflex glass
+[18:05:13] [Server thread/INFO]: [RedReflex: Gave 1 [Glass] to RedReflex]
+[18:06:06] [Server thread/INFO]: RedReflex issued server command: /gamemode creative
+[18:06:06] [Server thread/INFO]: [RedReflex: Set own game mode to Creative Mode]
+[18:06:28] [Server thread/INFO]: RedReflex issued server command: /fill 28 175 50 11 174 62 glass
+[18:06:28] [Server thread/INFO]: [RedReflex: Successfully filled 414 block(s)]
+[18:06:44] [Server thread/INFO]: RedReflex issued server command: /gamerule keepInventory true
+[18:06:44] [Server thread/INFO]: [RedReflex: Gamerule keepInventory is now set to: true]
+[18:06:46] [Server thread/INFO]: RedReflex issued server command: /time set day
+[18:06:46] [Server thread/INFO]: [RedReflex: Set the time to 1000]
+[18:06:48] [Server thread/INFO]: RedReflex issued server command: /gamemode survival
+[18:06:48] [Server thread/INFO]: [RedReflex: Set own game mode to Survival Mode]
+[18:06:53] [Server thread/INFO]: RedReflex issued server command: /give RedReflex minecraft:enchanted_golden_apple 64
+[18:06:53] [Server thread/INFO]: [RedReflex: Gave 64 [Enchanted Golden Apple] to RedReflex]
+[18:07:36] [Server thread/INFO]: RedReflex was doomed to fall by ZEUS, The lightning keeper using [Might of the Thunder]
+[18:09:22] [Server thread/INFO]: RedReflex issued server command: /mm skills info
+[18:09:25] [Server thread/INFO]: RedReflex issued server command: /mm skills info SmashAttack
+[18:15:13] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:15:13] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:15:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:15:13] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:15:17] [Server thread/INFO]: RedReflex issued server command: /mm mob listactive
+[18:15:19] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 923bde69-32bd-4b1b-a860-6e984f061961
+[18:15:30] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus
+[18:17:41] [Server thread/INFO]: RedReflex was slain by ZEUS, The lightning keeper using [Might of the Thunder]
+[18:17:53] [Server thread/INFO]: RedReflex issued server command: /mm mob listactive
+[18:17:56] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeinfo 1664ba6d-f921-4cef-874a-0359a7b395f1
+[18:18:09] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/2673, uuid='1664ba6d-f921-4cef-874a-0359a7b395f1', l='ServerLevel[world]', x=24.03, y=176.00, z=54.88, cpos=[1, 3], tl=3166, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:18:10] [Server thread/INFO]: RedReflex has made the advancement [Diamonds!]
+[18:20:06] [Server thread/INFO]: RedReflex issued server command: /effect give RedReflex minecraft:strength infinite 200 true
+[18:20:06] [Server thread/INFO]: [RedReflex: Applied effect Strength to RedReflex]
+[18:20:10] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus
+[18:20:14] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3117, uuid='fb753a50-1c80-4b58-a549-bc8a407c80a8', l='ServerLevel[world]', x=21.68, y=176.00, z=56.19, cpos=[1, 3], tl=58, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:20:17] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus
+[18:20:22] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3132, uuid='bef80015-5819-4c6c-bcdd-799db2434bca', l='ServerLevel[world]', x=23.47, y=176.00, z=56.27, cpos=[1, 3], tl=80, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:20:25] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus
+[18:20:30] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3144, uuid='56a35070-def8-4970-ad37-a1fbb9992345', l='ServerLevel[world]', x=18.40, y=176.00, z=59.32, cpos=[1, 3], tl=72, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:20:35] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:20:35] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:20:35] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:20:36] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:20:36] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:20:36] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:20:36] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:20:36] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:20:36] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:20:36] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:20:49] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:20:50] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:20:50] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:20:50] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:20:52] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus
+[18:20:53] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 5
+[18:20:58] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3197, uuid='25437e8b-8ea9-497d-9f57-50a3ceca78f2', l='ServerLevel[world]', x=20.27, y=176.00, z=55.52, cpos=[1, 3], tl=75, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:20:58] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3196, uuid='f4438337-8238-42e4-9a26-8273d492860a', l='ServerLevel[world]', x=21.76, y=176.00, z=56.49, cpos=[1, 3], tl=99, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:21:08] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3230, uuid='5d187edb-f82b-4b50-8b3d-d23697ff6691', l='ServerLevel[world]', x=19.05, y=176.00, z=56.56, cpos=[1, 3], tl=63, v=true] died: ZEUS, The lightning keeper was slain by RedReflex using [Might of the Thunder]
+[18:21:16] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3251, uuid='3f64d7ac-bb0e-417c-b380-a06b7dd512ab', l='ServerLevel[world]', x=20.08, y=176.00, z=54.34, cpos=[1, 3], tl=73, v=true] died: ZEUS, The lightning keeper was slain by RedReflex using [Might of the Thunder]
+[18:21:19] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3249, uuid='32810eee-3f3b-4839-8122-096b389a1536', l='ServerLevel[world]', x=23.92, y=176.00, z=54.56, cpos=[1, 3], tl=145, v=true] died: ZEUS, The lightning keeper was slain by RedReflex using [Might of the Thunder]
+[18:21:20] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3250, uuid='34316397-d93b-423b-870c-9cc18bff7459', l='ServerLevel[world]', x=26.35, y=176.00, z=55.34, cpos=[1, 3], tl=162, v=true] died: ZEUS, The lightning keeper was slain by RedReflex using [Might of the Thunder]
+[18:21:29] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 5
+[18:21:44] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3308, uuid='65334a90-41d8-4933-b60d-b0c5aa55003c', l='ServerLevel[world]', x=19.26, y=176.00, z=57.17, cpos=[1, 3], tl=251, v=true] died: ZEUS, The lightning keeper was slain by RedReflex using [Might of the Thunder]
+[18:21:46] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3312, uuid='a09a7c10-22b6-40e3-b4c9-a3991a674d06', l='ServerLevel[world]', x=15.63, y=176.00, z=55.83, cpos=[0, 3], tl=277, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:21:46] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3307, uuid='3471f1ec-b9f7-4d42-a5c8-81d9b0a7cef0', l='ServerLevel[world]', x=15.01, y=176.00, z=56.09, cpos=[0, 3], tl=309, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:21:47] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3306, uuid='121d2410-5ae1-4f42-8a7d-72f04268260a', l='ServerLevel[world]', x=15.17, y=176.00, z=56.08, cpos=[0, 3], tl=328, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:21:48] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3314, uuid='da609667-241e-4bf0-b921-d277c56bb841', l='ServerLevel[world]', x=14.92, y=176.00, z=56.98, cpos=[0, 3], tl=305, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:22:05] [Server thread/INFO]: RedReflex issued server command: /gamemode creative
+[18:22:05] [Server thread/INFO]: [RedReflex: Set own game mode to Creative Mode]
+[18:24:07] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 5
+[18:30:39] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:30:40] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:30:40] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:30:40] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:31:18] [Server thread/INFO]: RedReflex issued server command: /weather clear
+[18:31:18] [Server thread/INFO]: [RedReflex: Set the weather to clear]
+[18:31:31] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:31:32] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:31:32] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '-': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io
+[18:31:32] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Drop GI_MightOfTheThunder HAND - GI_MightOfTheThunder OFF_HAND
+[18:31:32] [Server thread/WARN]: [MythicMobs] --| File: C:\Users\sven\Desktop\mcserver\plugins\MythicMobs\mobs\GodsMobs.yml
+[18:31:32] [Server thread/WARN]: [MythicMobs] --| Error Message: Invalid Syntax
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:31:32] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:31:32] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:31:51] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:31:52] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:31:52] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '-': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io
+[18:31:52] [Server thread/WARN]: [MythicMobs] ✗ Configuration Error in Drop GI_MightOfTheThunder HAND - GI_MightOfTheThunder OFFHAND
+[18:31:52] [Server thread/WARN]: [MythicMobs] --| File: C:\Users\sven\Desktop\mcserver\plugins\MythicMobs\mobs\GodsMobs.yml
+[18:31:52] [Server thread/WARN]: [MythicMobs] --| Error Message: Invalid Syntax
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:31:52] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:31:52] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:31:54] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 5
+[18:32:00] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3686, uuid='72d8a9eb-c351-4ce3-8781-ee057d942743', l='ServerLevel[world]', x=19.08, y=176.00, z=56.89, cpos=[1, 3], tl=7790, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:03] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3771, uuid='f290ab80-fa8d-4972-9bf3-622b281f2496', l='ServerLevel[world]', x=24.22, y=176.00, z=54.84, cpos=[1, 3], tl=142, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:10] [Server thread/INFO]: RedReflex issued server command: /gamemode survival
+[18:32:10] [Server thread/INFO]: [RedReflex: Set own game mode to Survival Mode]
+[18:32:14] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3775, uuid='fb346ad1-ac07-4710-94f1-c1b17975143f', l='ServerLevel[world]', x=25.18, y=176.00, z=57.30, cpos=[1, 3], tl=190, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:20] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3776, uuid='6566e1bb-00f7-4c8a-afb5-af7bb48d9178', l='ServerLevel[world]', x=21.10, y=176.00, z=56.74, cpos=[1, 3], tl=292, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:29] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3801, uuid='1c849b2b-7abe-448e-b241-15f8f1a0be7f', l='ServerLevel[world]', x=20.48, y=176.00, z=55.31, cpos=[1, 3], tl=145, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:39] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3809, uuid='16ace6c6-61fb-4505-8445-599402766efb', l='ServerLevel[world]', x=18.27, y=176.00, z=58.26, cpos=[1, 3], tl=180, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:42] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 5
+[18:32:55] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3819, uuid='ef81bc24-3a69-4eff-bd0a-04b74ecb3998', l='ServerLevel[world]', x=20.18, y=176.00, z=56.54, cpos=[1, 3], tl=247, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:32:57] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3818, uuid='e921aef9-7020-473b-9316-3d14c8b78c43', l='ServerLevel[world]', x=21.49, y=176.00, z=56.63, cpos=[1, 3], tl=290, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:09] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3841, uuid='36e100cb-9e1b-47e8-a018-ee3bf6c46acc', l='ServerLevel[world]', x=26.02, y=176.00, z=54.92, cpos=[1, 3], tl=160, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:15] [Server thread/INFO]: RedReflex issued server command: /give RedReflex minecraft:enchanted_golden_apple 2
+[18:33:15] [Server thread/INFO]: [RedReflex: Gave 2 [Enchanted Golden Apple] to RedReflex]
+[18:33:21] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3849, uuid='d24ed22c-2bb2-4470-b808-1ec3f30ca858', l='ServerLevel[world]', x=17.98, y=176.00, z=56.25, cpos=[1, 3], tl=201, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:26] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3858, uuid='734b13bc-fac9-4134-8681-b78652de0b53', l='ServerLevel[world]', x=20.66, y=176.00, z=55.74, cpos=[1, 3], tl=76, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:31] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 5
+[18:33:41] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3868, uuid='a112af61-1e04-453c-b4cf-41c73be9de93', l='ServerLevel[world]', x=24.35, y=176.00, z=55.68, cpos=[1, 3], tl=186, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:42] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3867, uuid='1dcd92e4-610b-4db8-b1c6-842fec5c8af1', l='ServerLevel[world]', x=25.32, y=176.00, z=54.68, cpos=[1, 3], tl=210, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:51] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3891, uuid='e56d1e9e-0a34-43fa-90da-0f0ffaa4619f', l='ServerLevel[world]', x=23.58, y=176.00, z=57.81, cpos=[1, 3], tl=143, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:53] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3890, uuid='945f4418-995b-43e2-ad9f-8beb2d4003cb', l='ServerLevel[world]', x=25.12, y=176.00, z=57.69, cpos=[1, 3], tl=183, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:33:57] [Server thread/INFO]: RedReflex was slain by ZEUS, The lightning keeper using [Might of the Thunder]
+[18:34:10] [Server thread/INFO]: RedReflex issued server command: /effect give RedReflex minecraft:strength infinite 200 true
+[18:34:10] [Server thread/INFO]: [RedReflex: Applied effect Strength to RedReflex]
+[18:34:19] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/3907, uuid='4f50d1fe-743a-41a7-8551-f4fb93a2e46a', l='ServerLevel[world]', x=25.02, y=176.00, z=53.79, cpos=[1, 3], tl=491, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:35:01] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:35:02] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:35:02] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:35:02] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:35:03] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:35:19] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:35:19] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:35:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:35:19] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:35:35] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:35:36] [Server thread/INFO]: RedReflex issued server command: /minecraft:execute as 84782bde-0020-4c0b-96a1-268e1fe87463 run tp RedReflex
+[18:35:36] [Server thread/INFO]: [ZEUS, The lightning keeper: Teleported ZEUS, The lightning keeper to RedReflex]
+[18:35:47] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:35:47] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:35:47] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:35:47] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:36:00] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:36:00] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:36:00] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:36:00] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:36:08] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:36:09] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 84782bde-0020-4c0b-96a1-268e1fe87463
+[18:36:12] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:36:12] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:36:13] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:36:13] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:36:13] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:36:13] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:36:13] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:36:13] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:36:13] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:36:13] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:36:14] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:36:18] [Server thread/INFO]: RedReflex issued server command: /give RedReflex minecraft:enchanted_golden_apple 4
+[18:36:18] [Server thread/INFO]: [RedReflex: Gave 4 [Enchanted Golden Apple] to RedReflex]
+[18:36:30] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:36:31] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove e8c2e4f4-7165-47ab-8843-c55edeeaa21f
+[18:36:35] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:36:41] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:36:44] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:36:44] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:36:44] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:36:44] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:37:05] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:37:06] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 89545a40-3717-485d-a8a8-11893ea09b58
+[18:37:07] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 8c87b1ee-ad22-430f-978a-665bc2736d21
+[18:37:08] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 89545a40-3717-485d-a8a8-11893ea09b58
+[18:37:08] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 8c87b1ee-ad22-430f-978a-665bc2736d21
+[18:37:09] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeinfo 8c87b1ee-ad22-430f-978a-665bc2736d21
+[18:37:09] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeinfo 89545a40-3717-485d-a8a8-11893ea09b58
+[18:37:11] [Server thread/INFO]: RedReflex issued server command: /minecraft:tp 28.49 176.0 55.32
+[18:37:11] [Server thread/INFO]: [RedReflex: Teleported RedReflex to 28.490000, 176.000000, 55.320000]
+[18:37:11] [Server thread/INFO]: RedReflex issued server command: /minecraft:tp 29.13 84.41 68.02
+[18:37:11] [Server thread/INFO]: [RedReflex: Teleported RedReflex to 29.130000, 84.410000, 68.020000]
+[18:37:11] [Server thread/WARN]: RedReflex moved too quickly! 0.6400000000000006,-91.59,12.699999999999996
+[18:37:11] [Server thread/WARN]: RedReflex moved too quickly! 0.6400000000000006,-91.59,12.699999999999996
+[18:37:12] [Server thread/INFO]: RedReflex issued server command: /minecraft:tp 28.49 176.0 55.32
+[18:37:12] [Server thread/INFO]: [RedReflex: Teleported RedReflex to 28.490000, 176.000000, 55.320000]
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:37:12] [Server thread/WARN]: RedReflex moved too quickly! -0.6400000000000006,99.0,-12.699999999999996
+[18:39:34] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:39:35] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:39:35] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:39:35] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:39:36] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:40:36] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:40:37] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:40:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:40:37] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:40:44] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:40:45] [Server thread/INFO]: RedReflex issued server command: /minecraft:execute as d4b13ffd-7c02-45f9-a9db-d046c71d2245 run kill @s
+[18:40:45] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4300, uuid='d4b13ffd-7c02-45f9-a9db-d046c71d2245', l='ServerLevel[world]', x=28.37, y=176.00, z=54.50, cpos=[1, 3], tl=1372, v=true] died: ZEUS, The lightning keeper was killed while fighting RedReflex
+[18:40:45] [Server thread/INFO]: [ZEUS, The lightning keeper: Killed ZEUS, The lightning keeper]
+[18:40:48] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:40:51] [Server thread/INFO]: RedReflex was slain by ZEUS, The lightning keeper using [Might of the Thunder]
+[18:41:01] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:41:01] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:41:01] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:41:01] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:41:10] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:41:11] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 7c8f0e51-d195-4308-baa7-e22361daf71f
+[18:41:13] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:41:25] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:41:25] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:41:26] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:41:26] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:41:26] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:41:26] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:41:26] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:41:26] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:41:26] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:41:26] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:41:26] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 1
+[18:41:27] [Server thread/INFO]: RedReflex issued server command: /mm mobs egg get GodZeus 9
+[18:41:31] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:41:33] [Server thread/INFO]: RedReflex issued server command: /minecraft:execute as d7e434fb-4897-4d89-8351-cfaf16457fd7 run kill @s
+[18:41:33] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4469, uuid='d7e434fb-4897-4d89-8351-cfaf16457fd7', l='ServerLevel[world]', x=26.28, y=176.00, z=56.65, cpos=[1, 3], tl=351, v=true] died: ZEUS, The lightning keeper was killed
+[18:41:33] [Server thread/INFO]: [ZEUS, The lightning keeper: Killed ZEUS, The lightning keeper]
+[18:42:57] [Server thread/INFO]: RedReflex issued server command: /effect give RedReflex minecraft:strength infinite 200 true
+[18:42:57] [Server thread/INFO]: [RedReflex: Applied effect Strength to RedReflex]
+[18:43:05] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4504, uuid='6b3f504a-1d44-4457-b871-187f07d16f98', l='ServerLevel[world]', x=25.45, y=176.00, z=53.81, cpos=[1, 3], tl=1796, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:43:38] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:43:38] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:43:39] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:43:39] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:43:39] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:43:39] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:43:39] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:43:39] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:43:39] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:43:39] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:43:45] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:43:46] [Server thread/INFO]: RedReflex issued server command: /minecraft:execute as ff42bf12-8c9d-4496-8c71-7e203edefb48 run kill @s
+[18:43:46] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4705, uuid='ff42bf12-8c9d-4496-8c71-7e203edefb48', l='ServerLevel[world]', x=32.33, y=53.17, z=57.29, cpos=[2, 3], tl=117, v=true] died: ZEUS, The lightning keeper was killed
+[18:43:46] [Server thread/INFO]: [ZEUS, The lightning keeper: Killed ZEUS, The lightning keeper]
+[18:44:18] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:44:18] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:44:19] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:44:19] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:44:19] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:44:19] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:44:19] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:44:19] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:44:19] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:44:19] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:44:28] [Server thread/INFO]: RedReflex issued server command: /mm mobs listactive
+[18:44:30] [Server thread/INFO]: RedReflex issued server command: /mythicmobs:mythicmobs u activeremove 0fe30571-6462-4ac9-870c-d4358ff9bc4a
+[18:44:56] [Server thread/INFO]: RedReflex issued server command: /effect give RedReflex minecraft:strength infinite 200 true
+[18:44:56] [Server thread/INFO]: [RedReflex: Applied effect Strength to RedReflex]
+[18:45:04] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4800, uuid='a22afac7-2767-4786-84ed-62925ae7ebb8', l='ServerLevel[world]', x=18.83, y=176.00, z=57.18, cpos=[1, 3], tl=640, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:45:36] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:45:36] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:45:37] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:45:37] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:45:37] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:45:37] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:45:37] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:45:37] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:45:37] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:45:37] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:45:48] [Server thread/INFO]: RedReflex issued server command: /effect give RedReflex minecraft:strength infinite 200 true
+[18:45:48] [Server thread/INFO]: [RedReflex: Applied effect Strength to RedReflex]
+[18:45:50] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4883, uuid='0e4d9659-418d-450e-8a74-d10df6b7b166', l='ServerLevel[world]', x=22.15, y=176.00, z=57.25, cpos=[1, 3], tl=222, v=true] died: ZEUS, The lightning keeper was slain by RedReflex
+[18:46:12] [Server thread/INFO]: RedReflex issued server command: /mm reload
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Items...
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[18:46:12] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 9 mobs.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 skills.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 6 mythic items.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 4 drop tables.
+[18:46:12] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[18:46:12] [Server thread/INFO]: [MythicMobs] Mythic has finished reloading!
+[18:46:21] [Server thread/INFO]: RedReflex issued server command: /effect give RedReflex minecraft:strength infinite 200 true
+[18:46:21] [Server thread/INFO]: [RedReflex: Applied effect Strength to RedReflex]
+[18:46:28] [Server thread/INFO]: Named entity EntityPigZombie['ZEUS, The lightning keeper'/4897, uuid='5d3a797d-9a43-4f4f-af79-7709502066d4', l='ServerLevel[world]', x=21.13, y=176.00, z=56.50, cpos=[1, 3], tl=308, v=true] died: ZEUS, The lightning keeper was slain by RedReflex

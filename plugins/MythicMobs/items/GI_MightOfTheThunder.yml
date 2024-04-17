@@ -1,0 +1,43 @@
+GI_MightOfTheThunder:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: DIAMOND_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Might of the Thunder","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+      loc-name: '{"text":"","extra":["thunder_axe"]}'
+      lore:
+      - '""'
+      - '{"text":"","extra":[{"text":"This godly weapon allows you to","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+      - '{"text":"","extra":[{"text":"harness the power of thunder","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+      - '""'
+      - '{"text":"","extra":[{"text":"(Hit) - Strike Lightning","obfuscated":false,"italic":true,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '""'
+      - '{"text":"","extra":[{"text":"When in Main Hand:","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '{"text":"","extra":[{"text":" 11.0 Attack Damage","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_green","bold":false}]}'
+      - '{"text":"","extra":[{"text":" 1.0 Attack Speed","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_green","bold":false}]}'
+      custom-model-data: 1000001
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 3
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 11.0
+          name: generic.attack_damage
+          slot: HAND
+          uuid: 666d547c-e7aa-4386-8d84-5001811b0a97
+          operation: 0
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: -3.0
+          name: generic.attack_speed
+          slot: HAND
+          uuid: da4be210-9663-4c9c-91e0-fb04e17a99b9
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      Unbreakable: true

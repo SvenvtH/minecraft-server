@@ -1,0 +1,12 @@
+ZeusDrops:
+  Conditions:
+  - playerwithin{d=40}
+  Drops:
+  - ZeusItemDrops 1
+  - experience 100
+ZeusItemDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - GI_MightOfTheThunder 0.2
+  - DIAMOND 1-12 1

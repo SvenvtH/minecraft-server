@@ -1,0 +1,7 @@
+SmiteAttack:
+  Cooldown: 5
+  Conditions:
+  - targetwithin{d=40}
+  Skills:
+  - speak{m="Feel the wrath of my lightning!"} @PlayersInRadius{r=40}
+  - lightning @target

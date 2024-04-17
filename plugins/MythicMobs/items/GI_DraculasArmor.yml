@@ -1,0 +1,45 @@
+GI_DraculasArmor:
+  ItemStack:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: NETHERITE_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Dracula''s armor","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_red","bold":true}]}'
+      loc-name: '{"text":"","extra":["draculas_armor"]}'
+      lore:
+      - '""'
+      - '{"text":"","extra":[{"text":"A This armor once belonged to Vlad the Impaler","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      - '""'
+      - '{"text":"","extra":[{"text":"(Sneak + Jump to morph)","obfuscated":false,"italic":true,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+      custom-model-data: 1000020
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 5
+        THORNS: 4
+        DURABILITY: 3
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 6.0
+          name: generic.armor
+          slot: CHEST
+          uuid: a0fe041a-6b81-49b4-b055-13f755357dcf
+          operation: 0
+        GENERIC_ARMOR_TOUGHNESS:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 1.0
+          name: generic.armor_toughness
+          slot: CHEST
+          uuid: c2428b2a-cab9-4a38-aecf-cf613cc872c1
+          operation: 0
+        GENERIC_KNOCKBACK_RESISTANCE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: generic.knockback_resistance
+          slot: CHEST
+          uuid: aa1120b9-a38d-467b-994e-2849ac56b41a
+          operation: 0
+      ItemFlags:
+      - HIDE_ENCHANTS
+      Unbreakable: true

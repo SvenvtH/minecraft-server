@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "470a314a-1d96-487e-993b-9770c116a66c",
+    "name": "RedReflex",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
